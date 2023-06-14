@@ -8,7 +8,7 @@
     "test": "echo \"Error: no test specified\" && exit 0",
     "lint": "ts-standard",
     "lint:fix": "ts-standard --fix",
-    "preversion": "npm test && rm -rf ./dist/* && touch ./dist/.gitkeep",
+    "preversion": "rm -rf ./dist/* && mkdir ./dist && touch ./dist/.gitkeep",
     "version": "npm run build && action-docs --toc-level 3 --update-readme --no-banner && doctoc README.md && git add -A dist README.md"
   },
   "repository": {
