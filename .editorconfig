@@ -11,6 +11,7 @@ trim_trailing_whitespace = true
 # JSON Files
 [*.{json,json5,webmanifest}]
 indent_size = 2
+insert_final_newline = false
 
 # YAML Files
 [*.{yml,yaml}]
