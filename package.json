@@ -5,10 +5,12 @@
   "main": "index.js",
   "scripts": {
     "build": "ncc build src/index.ts -o dist --license licenses.txt -s --no-source-map-register",
-    "test": "echo \"Error: no test specified\" && exit 0",
     "lint": "ts-standard",
     "lint:fix": "ts-standard --fix",
     "preversion": "rm -rf ./dist/* && mkdir ./dist && touch ./dist/.gitkeep",
+    "test": "npm run test:acceptance ",
+    "test:acceptance": "mkdir -p reports && npx cucumber-js --config cucumber-config-acc.js",
+    "test:coverage": "nyc npm run test",
     "version": "npm run build && action-docs --toc-level 3 --update-readme --no-banner && doctoc README.md && git add -A dist README.md"
   },
   "repository": {

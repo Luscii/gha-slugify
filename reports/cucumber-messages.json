@@ -1,0 +1,8 @@
+{"meta":{"protocolVersion":"21.0.1","implementation":{"version":"9.1.2","name":"cucumber-js"},"cpu":{"name":"arm64"},"os":{"name":"darwin","version":"22.5.0"},"runtime":{"name":"node.js","version":"16.20.0"}}}
+{"stepDefinition":{"id":"c54ba369-eea2-42e7-9dbd-ba8e71980eec","pattern":{"source":"a Github Action is configured with the following environment variables:","type":"CUCUMBER_EXPRESSION"},"sourceReference":{"uri":"step-definitions/acceptance/given.ts","location":{"line":16}}}}
+{"stepDefinition":{"id":"f799112a-ba3f-40b3-9f79-26c755a61719","pattern":{"source":"is configured with the following environment variables:","type":"CUCUMBER_EXPRESSION"},"sourceReference":{"uri":"step-definitions/acceptance/given.ts","location":{"line":17}}}}
+{"stepDefinition":{"id":"7d2f7499-7245-463b-a2fb-81b88fdda5b4","pattern":{"source":"the following environment variables:","type":"CUCUMBER_EXPRESSION"},"sourceReference":{"uri":"step-definitions/acceptance/given.ts","location":{"line":18}}}}
+{"stepDefinition":{"id":"dbc080a5-3eb0-422e-a5ec-f55134d2617c","pattern":{"source":"the following inputs:","type":"CUCUMBER_EXPRESSION"},"sourceReference":{"uri":"step-definitions/acceptance/given.ts","location":{"line":19}}}}
+{"stepDefinition":{"id":"e716f0a5-8251-466f-9009-6f5320af2a55","pattern":{"source":"the Github Action is executed","type":"CUCUMBER_EXPRESSION"},"sourceReference":{"uri":"step-definitions/acceptance/when.ts","location":{"line":5}}}}
+{"testRunStarted":{"timestamp":{"seconds":1686756950,"nanos":186000000}}}
+{"testRunFinished":{"timestamp":{"seconds":1686756950,"nanos":186000000},"success":true}}
