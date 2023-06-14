@@ -1,0 +1,6 @@
+name: Slugify Action
+description: Github Action to Slugify a Value in a Workflow
+author: 'Boite Witte <boite@luscii.com>'
+runs:
+  using: 'node16'
+  main: 'dist/index.js'
