@@ -1,0 +1,36 @@
+{
+  "name": "gha-slugify",
+  "version": "1.0.0",
+  "description": "Github Action to Slugify a Value in a Workflow",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "ts-standard",
+    "lint:fix": "ts-standard --fix"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Luscii/gha-slugify.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Luscii/gha-slugify/issues"
+  },
+  "homepage": "https://github.com/Luscii/gha-slugify#readme",
+  "dependencies": {
+    "@actions/core": "^1.10.0",
+    "@actions/github": "^5.1.1"
+  },
+  "devDependencies": {
+    "@vercel/ncc": "^0.36.1",
+    "ts-standard": "^12.0.2",
+    "typescript": "^5.1.3"
+  },
+  "ts-standard": {
+    "ignore": [
+      "dist"
+    ]
+  }
+}
