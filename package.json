@@ -4,9 +4,12 @@
   "description": "Github Action to Slugify a Value in a Workflow",
   "main": "index.js",
   "scripts": {
+    "build": "ncc build src/index.ts -o dist --license licenses.txt -s --no-source-map-register",
     "test": "echo \"Error: no test specified\" && exit 1",
     "lint": "ts-standard",
-    "lint:fix": "ts-standard --fix"
+    "lint:fix": "ts-standard --fix",
+    "preversion": "npm test && rm -rf ./dist/* && touch ./dist/.gitkeep",
+    "version": "npm run build && action-docs --toc-level 3 --update-readme --no-banner && doctoc README.md && git add -A dist README.md"
   },
   "repository": {
     "type": "git",
@@ -25,6 +28,8 @@
   },
   "devDependencies": {
     "@vercel/ncc": "^0.36.1",
+    "action-docs": "^1.2.0",
+    "doctoc": "^2.2.1",
     "ts-standard": "^12.0.2",
     "typescript": "^5.1.3"
   },
